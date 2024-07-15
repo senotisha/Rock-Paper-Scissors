@@ -19,18 +19,23 @@ function getComputerChoice () {
 console.log(getComputerChoice())
 
 function getHumanChoice (){
-    let humanChoice = prompt ("Pick: Rock, Paper OR Scissors");
-    if (humanChoice === "Rock") {
+    let playerChoice = prompt ("Pick: Rock, Paper OR Scissors");
+    if (playerChoice === "Rock") {
         return "ROCK"
     }
     
-    else if (humanChoice == "Paper") {
+    else if (playerChoice == "Paper") {
         return "PAPER"
     }
 
-    else (humanChoice === "Scissors") 
+    else (playerChoice === "Scissors") 
         return "SCISSORS"
     
 }
 
 console.log(getHumanChoice())
+
+
+function playRound (humanChoice, computerChoice) {
+
+}
