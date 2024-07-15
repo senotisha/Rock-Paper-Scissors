@@ -1,5 +1,5 @@
 function getComputerChoice () {
-    return Math.floor(Math.random().toString("Rock", "Paper", "Scissors") * 3);
+    return Math.floor(Math.random() * 3);
 }
 
 console.log(getComputerChoice())
