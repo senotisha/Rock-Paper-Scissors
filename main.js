@@ -19,16 +19,16 @@ function getComputerChoice () {
 console.log(getComputerChoice())
 
 function getHumanChoice (){
-    const playerChoice = prompt ("Pick: Rock, Paper OR Scissors");
-    if (playerChoice === "Rock") {
+    const humanChoice = prompt ("Pick: Rock, Paper OR Scissors");
+    if (humanChoice === "Rock") {
         return "ROCK";
     }
     
-    else if (playerChoice === "Paper") {
+    else if (humanChoice === "Paper") {
         return "PAPER";
     }
 
-    else (playerChoice === "Scissors") 
+    else (humanChoice === "Scissors") 
         return "SCISSORS";
     
 }
