@@ -1,43 +1,43 @@
-const humanScore = 0;
-const computerScore = 0;
+let humanScore = 0;
+let computerScore = 0;
 
 
 function getComputerChoice () {
-    const computerChoice = Math.floor(Math.random() * 3);
-    if (computerChoice === 1) {
+    const botChoice = Math.floor(Math.random() * 3);
+    if (botChoice === 1) {
         return "ROCK";
     }
 
-    else if (computerChoice === 2) {
+    else if (botChoice === 2) {
         return "PAPER";
     }
 
-    else (computerChoice === 3) 
+    else (botChoice === 3) 
         return "SCISSORS";
 }
 
 console.log(getComputerChoice())
 
 function getHumanChoice (){
-    const humanChoice = prompt ("Pick: Rock, Paper OR Scissors");
-    if (humanChoice === "Rock") {
+    const playerChoice = prompt ("Pick: Rock, Paper OR Scissors").toLowerCase();
+    if (playerChoice === "rock") {
         return "ROCK";
     }
     
-    else if (humanChoice === "Paper") {
+    else if (playerChoice === "paper") {
         return "PAPER";
     }
 
-    else (humanChoice === "Scissors") 
+    else (playerChoice === "scissors") 
         return "SCISSORS";
     
 }
 
-console.log(getHumanChoice())
+
 
 
 function playRound (humanChoice, computerChoice) {
-    if (humanSelection === "ROCK" && computerSelection === "PAPER" ) {
+    if (humanChoice === "ROCK" && computerChoice === "PAPER" ) {
         console.log("You lose! Paper beats Rock.");
     }
 }
