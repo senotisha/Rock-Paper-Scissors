@@ -1,5 +1,3 @@
-let humanScore = 0;
-let computerScore = 0;
 
 
 function getComputerChoice () {
@@ -71,3 +69,14 @@ const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
 playRound (humanSelection, computerSelection);
+
+
+function playGame() {
+    let humanScore = 0;
+    let computerScore = 0;
+    playRound (getComputerChoice(), getHumanChoice());
+    playRound (getComputerChoice(), getHumanChoice());
+    playRound (getComputerChoice(), getHumanChoice());
+    playRound (getComputerChoice(), getHumanChoice());
+
+}
